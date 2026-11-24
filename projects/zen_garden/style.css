@@ -1,0 +1,25 @@
+/*
+  ITD110 Zen Garden Project
+  Your name:
+  Your design concept (one sentence):
+
+  All of your CSS goes in this file.
+*/
+/* Desktop Layout */
+body {
+  display: grid;
+  grid: "head head" auto
+        "menu main" 1fr
+        "foot foot" auto / 200px 1fr;
+}
+
+/* Mobile Layout (600px or narrower) */
+@media (max-width: 600px) {
+  body {
+    grid: "head" auto
+          "menu" auto
+          "main" 1fr
+          "foot" auto / 1fr;
+  }
+}
+
